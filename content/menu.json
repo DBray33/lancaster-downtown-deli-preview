@@ -54,7 +54,7 @@
       "description": "Easter Ham, 2 Large Eggs & Cheese on Choice of Bread",
       "price": 8.99,
       "isPopular": false,
-      "image": ""
+      "image": "https://images.pexels.com/photos/5848080/pexels-photo-5848080.jpeg"
     },
     {
       "id": "sausage-egg-cheese",
@@ -62,7 +62,7 @@
       "description": "1 Sausage Patty, 2 Large Eggs & Cheese on Choice of Bread",
       "price": 8.99,
       "isPopular": false,
-      "image": ""
+      "image": "https://images.pexels.com/photos/6529815/pexels-photo-6529815.jpeg"
     },
     {
       "id": "the-jethro",
@@ -70,7 +70,7 @@
       "description": "Bacon, Ham & Sausage Patty with Cheese & 2 Large Eggs on a Choice of Bagel",
       "price": 8.99,
       "isPopular": false,
-      "image": ""
+      "image": "https://images.pexels.com/photos/6529815/pexels-photo-6529815.jpeg"
     },
     {
       "id": "grilled-cheese-egg",
@@ -78,7 +78,7 @@
       "description": "2 slices of Cheese & 2 Large Eggs on Choice of Bread",
       "price": 7.99,
       "isPopular": false,
-      "image": ""
+      "image": "/assets/egg-cheese.jpg"
     },
     {
       "id": "guacamole-toast",
@@ -86,7 +86,7 @@
       "description": "Guacamole, sliced Tomato & Feta on a Toasted Ciabatta Roll",
       "price": 8.99,
       "isPopular": false,
-      "image": ""
+      "image": "https://images.pexels.com/photos/2067423/pexels-photo-2067423.jpeg"
     }
   ],
   "sandwiches": [
