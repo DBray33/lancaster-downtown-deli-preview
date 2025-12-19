@@ -6,7 +6,7 @@
       "description": "Breakfast Sausage, Crumbled Bacon, 3 Large Eggs & Parmesan Cheese in a Warm Flour Tortilla",
       "price": 9.99,
       "isPopular": false,
-      "image": ""
+      "image": "/assets/sandwich-lunch.jpg"
     },
     {
       "id": "belt",
