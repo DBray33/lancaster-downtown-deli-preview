@@ -90,12 +90,14 @@
         // Render each item
         items.forEach(item => {
             const li = document.createElement('li');
-            li.className = 'menu-item' + (item.isPopular ? ' featured' : '');
+            li.className = 'menu-item' + (item.isPopular ? ' featured' : '') + (item.image ? ' has-image' : '');
 
             const priceDisplay = item.priceDisplay || `$${item.price.toFixed(2)}`;
             const popularIcon = item.isPopular ? ' <i class="fa-solid fa-fire"></i>' : '';
+            const imageHtml = item.image ? `<img src="${item.image}" alt="${item.name}" class="menu-item-image">` : '';
 
             li.innerHTML = `
+                ${imageHtml}
                 <div class="item-info">
                     <span class="item-name">${item.name}${popularIcon}</span>
                     <span class="item-desc">${item.description}</span>

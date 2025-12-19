@@ -193,7 +193,6 @@ address {
 ============================================ */
 
 .special-hero {
-    background: url('https://images.unsplash.com/photo-1553909489-cd47e0907980?fm=jpg&q=85&w=1920&fit=crop') left center / cover no-repeat;
     padding: var(--space-xl) var(--space-lg);
     position: relative;
     overflow: hidden;
@@ -202,6 +201,18 @@ address {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: var(--color-charcoal);
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
+    z-index: 0;
 }
 
 .special-hero::before {
@@ -515,6 +526,29 @@ address {
     font-weight: 600;
     color: var(--color-green);
     white-space: nowrap;
+}
+
+/* Menu Item Images */
+.menu-item.has-image {
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.menu-item-image {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-md);
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.menu-item.has-image .item-info {
+    flex: 1;
+    min-width: 150px;
+}
+
+.menu-item.has-image .item-price {
+    align-self: flex-start;
 }
 
 .menu-note {
