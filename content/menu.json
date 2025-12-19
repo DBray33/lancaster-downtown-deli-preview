@@ -1,18 +1,18 @@
 {
   "breakfast": [
     {
-      "id": "belt",
-      "name": "B.E.L.T",
-      "description": "3 slices of Applewood Smoked Bacon, 2 Large Eggs, Lettuce & sliced Tomato on Texas Toast",
-      "price": 8.99,
-      "isPopular": false,
-      "image": ""
-    },
-    {
       "id": "breakfast-burrito",
       "name": "Breakfast Burrito",
       "description": "Breakfast Sausage, Crumbled Bacon, 3 Large Eggs & Parmesan Cheese in a Warm Flour Tortilla",
       "price": 9.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "belt",
+      "name": "B.E.L.T",
+      "description": "3 slices of Applewood Smoked Bacon, 2 Large Eggs, Lettuce & sliced Tomato on Texas Toast",
+      "price": 8.99,
       "isPopular": false,
       "image": ""
     },
