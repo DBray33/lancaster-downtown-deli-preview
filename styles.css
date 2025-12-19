@@ -316,16 +316,20 @@ address {
 
 .special-details {
     color: var(--color-white);
-    text-align: left;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .special-title {
     font-family: var(--font-display);
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
     font-weight: 700;
     margin-bottom: var(--space-sm);
     color: var(--color-yellow);
     animation: fadeInUp 0.7s ease-out 0.2s both;
+    white-space: nowrap;
 }
 
 .special-description {
@@ -388,6 +392,74 @@ address {
     background: var(--color-green-light);
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
+}
+
+/* Order Buttons */
+.order-buttons {
+    display: flex;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+    flex-wrap: wrap;
+    animation: fadeInUp 0.7s ease-out 1s both;
+    justify-content: center;
+}
+
+.order-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-weight: 600;
+    font-size: 15px;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-normal);
+    min-height: 44px;
+}
+
+.order-btn--grubhub {
+    background: #F63440;
+    color: var(--color-white);
+}
+
+.order-btn--grubhub:hover {
+    background: #d92d38;
+    transform: translateY(-2px);
+}
+
+.order-btn--doordash {
+    background: #FF3008;
+    color: var(--color-white);
+}
+
+.order-btn--doordash:hover {
+    background: #e02b07;
+    transform: translateY(-2px);
+}
+
+.order-buttons--menu {
+    justify-content: center;
+    margin-bottom: var(--space-lg);
+    animation: none;
+}
+
+.order-buttons--footer {
+    animation: none;
+}
+
+.footer-order {
+    margin-bottom: var(--space-md);
+}
+
+.footer-order-label {
+    color: var(--color-cream);
+    font-size: 14px;
+    margin-bottom: var(--space-sm);
+}
+
+.order-buttons--footer .order-btn {
+    font-size: 14px;
+    padding: var(--space-xs) var(--space-md);
+    min-height: 40px;
 }
 
 /* ============================================
@@ -488,7 +560,7 @@ address {
 }
 
 .menu-category[data-expanded="true"] .menu-category-content {
-    max-height: 1000px;
+    max-height: 3000px;
 }
 
 .menu-items {
@@ -1141,6 +1213,11 @@ address {
 
     .special-details {
         text-align: right;
+        align-items: flex-end;
+    }
+
+    .order-buttons {
+        justify-content: flex-end;
     }
 
     .special-description {
