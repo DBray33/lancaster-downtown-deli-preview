@@ -572,10 +572,7 @@ address {
 ============================================ */
 
 .reviews-section {
-    background:
-        linear-gradient(135deg, transparent 25%, rgba(255,255,255,0.03) 25%, rgba(255,255,255,0.03) 50%, transparent 50%, transparent 75%, rgba(255,255,255,0.03) 75%),
-        linear-gradient(to bottom, var(--color-green-dark), var(--color-green), var(--color-green-dark));
-    background-size: 40px 40px, 100% 100%;
+    background: linear-gradient(to bottom, var(--color-green-dark), var(--color-green), var(--color-green-dark));
     padding: var(--space-xxl) var(--space-md);
     position: relative;
     overflow: hidden;
