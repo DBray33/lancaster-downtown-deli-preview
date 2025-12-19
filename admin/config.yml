@@ -1,0 +1,81 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Media files stored in assets folder
+media_folder: "assets"
+public_folder: "/assets"
+
+# Collections
+collections:
+  # Today's Special
+  - name: "special"
+    label: "Today's Special"
+    files:
+      - name: "special"
+        label: "Featured Item"
+        file: "content/special.json"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "description", label: "Description", widget: "text" }
+          - { name: "price", label: "Price", widget: "number", value_type: "float", min: 0 }
+          - { name: "image", label: "Image", widget: "image", required: false }
+          - { name: "showCustomerFavorite", label: "Show Customer Favorite Badge", widget: "boolean", default: true }
+          - { name: "isActive", label: "Active", widget: "boolean", default: true }
+
+  # Menu Items
+  - name: "menu"
+    label: "Menu"
+    files:
+      - name: "menu"
+        label: "All Menu Items"
+        file: "content/menu.json"
+        fields:
+          # Breakfast
+          - name: "breakfast"
+            label: "Breakfast"
+            widget: "list"
+            fields:
+              - { name: "id", label: "ID (no spaces)", widget: "string" }
+              - { name: "name", label: "Name", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+              - { name: "price", label: "Price", widget: "number", value_type: "float", min: 0 }
+              - { name: "isPopular", label: "Popular Item (shows fire icon)", widget: "boolean", default: false }
+              - { name: "image", label: "Image", widget: "image", required: false }
+
+          # Sandwiches
+          - name: "sandwiches"
+            label: "Sandwiches"
+            widget: "list"
+            fields:
+              - { name: "id", label: "ID (no spaces)", widget: "string" }
+              - { name: "name", label: "Name", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+              - { name: "price", label: "Price", widget: "number", value_type: "float", min: 0 }
+              - { name: "isPopular", label: "Popular Item (shows fire icon)", widget: "boolean", default: false }
+              - { name: "image", label: "Image", widget: "image", required: false }
+
+          # Sides
+          - name: "sides"
+            label: "Sides"
+            widget: "list"
+            fields:
+              - { name: "id", label: "ID (no spaces)", widget: "string" }
+              - { name: "name", label: "Name", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+              - { name: "price", label: "Price", widget: "number", value_type: "float", min: 0, default: 0 }
+              - { name: "priceDisplay", label: "Price Display Text", widget: "string", required: false, hint: "e.g. 'Included' - leave blank to show price" }
+              - { name: "isPopular", label: "Popular Item", widget: "boolean", default: false }
+              - { name: "image", label: "Image", widget: "image", required: false }
+
+          # Drinks
+          - name: "drinks"
+            label: "Drinks"
+            widget: "list"
+            fields:
+              - { name: "id", label: "ID (no spaces)", widget: "string" }
+              - { name: "name", label: "Name", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+              - { name: "price", label: "Price", widget: "number", value_type: "float", min: 0 }
+              - { name: "isPopular", label: "Popular Item", widget: "boolean", default: false }
+              - { name: "image", label: "Image", widget: "image", required: false }

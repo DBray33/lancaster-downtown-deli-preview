@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lancaster Downtown Deli | Best Deli of Lancaster 2025</title>
+    <meta name="description" content="Award-winning deli in downtown Lancaster serving fresh sandwiches, breakfast, and house-made sides since 2019.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a89d5ed968.js" crossorigin="anonymous"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Netlify Identity (for CMS login redirect) -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <!-- ============================================
+         HEADER
+    ============================================ -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <img src="assets/lancaster-downtown-deli-logo-circle.png" alt="Lancaster Downtown Deli" class="logo-img">
+            </a>
+            <nav class="nav">
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#visit" class="nav-link">Visit</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================
+         QUICK INFO BAR
+    ============================================ -->
+    <section class="quick-info">
+        <div class="quick-info-inner">
+            <div class="quick-item">
+                <i class="fa-solid fa-trophy"></i>
+                <span>Best Deli 2025</span>
+            </div>
+            <div class="quick-item">
+                <i class="fa-solid fa-star"></i>
+                <span>4.8 Rating</span>
+            </div>
+            <div class="quick-item">
+                <i class="fa-solid fa-clock"></i>
+                <span>Open til 3pm</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         TODAY'S SPECIAL - HERO
+    ============================================ -->
+    <section class="special-hero">
+        <div class="special-badge">
+            <i class="fa-solid fa-fire"></i>
+            Today's Special
+        </div>
+        <div class="special-content">
+            <div class="special-image-wrapper">
+                <img src="assets/honey-curry-chicken.jpg" alt="Honey Curry Chicken Sandwich" class="special-image">
+            </div>
+            <div class="special-details">
+                <h1 class="special-title">Honey Curry Chicken</h1>
+                <p class="special-description">Shredded Rotisserie Chicken blended with Wildflower Honey, Curry Powder & Mayo on your Choice of Bread. Our best seller and customer favorite!</p>
+                <div class="special-meta">
+                    <span class="special-price">$10.99</span>
+                    <span class="special-tag"><i class="fa-solid fa-heart"></i> Customer Favorite</span>
+                </div>
+                <a href="tel:+17173973080" class="special-cta">
+                    <i class="fa-solid fa-phone"></i>
+                    Call to Order
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         MENU SECTIONS
+    ============================================ -->
+    <section id="menu" class="menu-section">
+        <h2 class="section-title">
+            <i class="fa-solid fa-utensils"></i>
+            Our Menu
+        </h2>
+
+        <!-- BREAKFAST -->
+        <div class="menu-category" data-category="breakfast">
+            <button class="menu-category-header" aria-expanded="false">
+                <div class="category-left">
+                    <img src="assets/breakfast.jpg" alt="Breakfast" class="category-thumb">
+                    <div class="category-info">
+                        <h3 class="category-title">Breakfast</h3>
+                        <p class="category-subtitle">Served until 11am</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-down category-toggle"></i>
+            </button>
+            <div class="menu-category-content">
+                <ul class="menu-items">
+                    <!-- Menu items loaded dynamically from content/menu.json -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- LUNCH / SANDWICHES -->
+        <div class="menu-category" data-category="lunch">
+            <button class="menu-category-header" aria-expanded="false">
+                <div class="category-left">
+                    <img src="assets/sandwich-lunch.jpg" alt="Sandwiches" class="category-thumb">
+                    <div class="category-info">
+                        <h3 class="category-title">Sandwiches</h3>
+                        <p class="category-subtitle">Fresh-made daily</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-down category-toggle"></i>
+            </button>
+            <div class="menu-category-content">
+                <ul class="menu-items">
+                    <!-- Menu items loaded dynamically from content/menu.json -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- SIDES -->
+        <div class="menu-category" data-category="sides">
+            <button class="menu-category-header" aria-expanded="false">
+                <div class="category-left">
+                    <img src="assets/sides.jpg" alt="Sides" class="category-thumb">
+                    <div class="category-info">
+                        <h3 class="category-title">House-Made Sides</h3>
+                        <p class="category-subtitle">Made fresh in-house</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-down category-toggle"></i>
+            </button>
+            <div class="menu-category-content">
+                <ul class="menu-items">
+                    <!-- Menu items loaded dynamically from content/menu.json -->
+                </ul>
+                <!-- Note added dynamically by JavaScript -->
+            </div>
+        </div>
+
+        <!-- DRINKS -->
+        <div class="menu-category" data-category="drinks">
+            <button class="menu-category-header" aria-expanded="false">
+                <div class="category-left">
+                    <img src="assets/coffee.jpg" alt="Drinks" class="category-thumb">
+                    <div class="category-info">
+                        <h3 class="category-title">Drinks</h3>
+                        <p class="category-subtitle">Hot & cold beverages</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-down category-toggle"></i>
+            </button>
+            <div class="menu-category-content">
+                <ul class="menu-items">
+                    <!-- Menu items loaded dynamically from content/menu.json -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         REVIEWS
+    ============================================ -->
+    <section class="reviews-section">
+        <h2 class="section-title">
+            <i class="fa-solid fa-quote-left"></i>
+            What People Say
+        </h2>
+        <div class="reviews-grid">
+            <div class="review-card featured">
+                <div class="review-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"Best deli in Lancaster, hands down. The honey curry chicken is incredible!"</p>
+                <span class="review-author">- Sarah M.</span>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"Fresh ingredients, fast service, friendly staff. What more could you ask for?"</p>
+                <span class="review-author">- Mike T.</span>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"Their house-made sides are the real deal. The potato salad takes me back to my grandma's kitchen."</p>
+                <span class="review-author">- Jennifer K.</span>
+            </div>
+        </div>
+        <div class="reviews-summary">
+            <div class="summary-stat">
+                <span class="stat-number">4.8</span>
+                <span class="stat-label">Google Rating</span>
+            </div>
+            <div class="summary-stat">
+                <span class="stat-number">113</span>
+                <span class="stat-label">Reviews</span>
+            </div>
+            <div class="summary-stat">
+                <span class="stat-number">4.9</span>
+                <span class="stat-label">Facebook</span>
+            </div>
+        </div>
+        <a href="https://share.google/tRkw4O9A6oPnGdg6D" target="_blank" rel="noopener" class="see-more-reviews">
+            <i class="fa-brands fa-google"></i>
+            See More Reviews
+        </a>
+    </section>
+
+    <!-- ============================================
+         ABOUT
+    ============================================ -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="about-image-wrapper">
+                <img src="assets/deli-counter.jpg" alt="Inside Lancaster Downtown Deli" class="about-image">
+            </div>
+            <div class="about-text">
+                <h2 class="section-title">
+                    <i class="fa-solid fa-heart"></i>
+                    Our Story
+                </h2>
+                <p>Lancaster Downtown Deli has been serving the heart of Lancaster since 2019. We're proud to bring you fresh, quality sandwiches made with locally-sourced ingredients whenever possible.</p>
+                <p>From our house-made sides to our award-winning sandwiches, everything is crafted with care by our dedicated team.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Best Deli 2025</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fa-solid fa-leaf"></i>
+                        <span>Fresh Daily</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Family Owned</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         VISIT US
+    ============================================ -->
+    <section id="visit" class="visit-section">
+        <div class="visit-content">
+            <div class="visit-image-wrapper">
+                <img src="assets/storefront.jpg" alt="Lancaster Downtown Deli Storefront" class="visit-image">
+            </div>
+            <div class="visit-info">
+                <h2 class="section-title">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Visit Us
+                </h2>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-map-pin"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-label">Location</h3>
+                            <address class="info-value">52 N Prince St, Ground Floor<br>Lancaster, PA 17603</address>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-label">Hours</h3>
+                            <p class="info-value">Mon-Fri: 7am - 3pm<br>Sat: 8am - 2pm<br>Sun: Closed</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-label">Call Ahead</h3>
+                            <a href="tel:+17173973080" class="info-value info-link">(717) 397-3080</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://maps.google.com/?q=52+N+Prince+St+Lancaster+PA" target="_blank" rel="noopener" class="directions-btn">
+                    <i class="fa-solid fa-directions"></i>
+                    Get Directions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+    ============================================ -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <img src="assets/lancaster-downtown-deli-logo-circle.png" alt="Lancaster Downtown Deli" class="footer-logo-img">
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/LancasterDowntownDeli/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/lancasterdowntowndeli/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <p class="footer-copy">&copy; 2025 Lancaster Downtown Deli. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Netlify Identity redirect after login -->
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>

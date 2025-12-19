@@ -1,0 +1,277 @@
+{
+  "breakfast": [
+    {
+      "id": "belt",
+      "name": "B.E.L.T",
+      "description": "3 slices of Applewood Smoked Bacon, 2 Large Eggs, Lettuce & sliced Tomato on Texas Toast",
+      "price": 8.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "breakfast-burrito",
+      "name": "Breakfast Burrito",
+      "description": "Breakfast Sausage, Crumbled Bacon, 3 Large Eggs & Parmesan Cheese in a Warm Flour Tortilla",
+      "price": 9.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "breakfast-melt",
+      "name": "Breakfast Melt",
+      "description": "3 slices of Applewood Smoked Bacon, 2 Large Eggs, 3 slices of Melted Cheese on a Bagel of Choice",
+      "price": 8.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "mexican-egg",
+      "name": "Mexican Egg",
+      "description": "Sausage Patty, Green Chilies, Cumin & 2 Large Eggs on a Choice of Bagel",
+      "price": 8.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "greek-egg",
+      "name": "Greek Egg",
+      "description": "Crumbled Feta, 2 Large Eggs, Diced Kalamata Olives & Sauteed Cherry Tomatoes on Warm Pita Bread",
+      "price": 9.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "ham-cheese-burrito",
+      "name": "Ham & Cheese Burrito",
+      "description": "3 Large Eggs, diced Easter Ham & Parmesan Cheese in a warm Flour Tortilla",
+      "price": 9.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "ham-egg-cheese",
+      "name": "Ham, Egg & Cheese",
+      "description": "Easter Ham, 2 Large Eggs & Cheese on Choice of Bread",
+      "price": 8.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "sausage-egg-cheese",
+      "name": "Sausage, Egg & Cheese",
+      "description": "1 Sausage Patty, 2 Large Eggs & Cheese on Choice of Bread",
+      "price": 8.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "the-jethro",
+      "name": "The Jethro",
+      "description": "Bacon, Ham & Sausage Patty with Cheese & 2 Large Eggs on a Choice of Bagel",
+      "price": 8.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "grilled-cheese-egg",
+      "name": "Grilled Cheese & Egg",
+      "description": "2 slices of Cheese & 2 Large Eggs on Choice of Bread",
+      "price": 7.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "guacamole-toast",
+      "name": "Guacamole Toast",
+      "description": "Guacamole, sliced Tomato & Feta on a Toasted Ciabatta Roll",
+      "price": 8.99,
+      "isPopular": false,
+      "image": ""
+    }
+  ],
+  "sandwiches": [
+    {
+      "id": "honey-curry-chicken",
+      "name": "Honey Curry Chicken",
+      "description": "Shredded Rotisserie Chicken blended with Wildflower Honey, Curry Powder & Mayo on your Choice of Bread. Add Cheese +.75",
+      "price": 10.99,
+      "isPopular": true,
+      "image": ""
+    },
+    {
+      "id": "rotisserie-chicken-deluxe",
+      "name": "Shredded Rotisserie Chicken Deluxe",
+      "description": "Hand pulled Rotisserie Chicken with Cheese, 2 slices of Bacon, Lettuce & Tomato on your Choice of Bread",
+      "price": 12.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "turkey-deluxe",
+      "name": "Turkey Deluxe",
+      "description": "Thin sliced Turkey, Lettuce, Tomato & 2 slices of Bacon on your Choice of Bread",
+      "price": 11.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "turkey-swiss-rye",
+      "name": "Turkey & Swiss On Rye",
+      "description": "Sliced & Grilled Turkey Breast with Swiss on Toasted Rye",
+      "price": 9.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "ham-deluxe",
+      "name": "Ham Deluxe",
+      "description": "Thin sliced Easter Ham with Lettuce, Tomato & 2 slices of Bacon on your Choice of Bread. Add Cheese +.75",
+      "price": 10.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "toasted-ham-cheese",
+      "name": "Toasted Ham & Cheese",
+      "description": "Thin sliced Easter Ham & Cheese with your choice of Cheese & Bread",
+      "price": 9.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "big-kahuna-tuna",
+      "name": "Big Kahuna Tuna",
+      "description": "100% White Albacore Tuna blended with Mayo & Celery, topped with Lettuce & Tomato on your Choice of Bread. Make it a Melt +.75",
+      "price": 10.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "blt",
+      "name": "B.L.T",
+      "description": "2 slices of Applewood Smoked Bacon, Crisp Lettuce & Tomato on your Choice of Bread",
+      "price": 8.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "bltc",
+      "name": "B.L.T.C",
+      "description": "2 slices of Applewood Smoked Bacon, Crisp Lettuce, Tomato & Cheese on your Choice of Bread",
+      "price": 9.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "toasted-three-cheese",
+      "name": "Toasted Three Cheese",
+      "description": "Extra Sharp Cheddar, Swiss & Provolone on your Choice of Bread",
+      "price": 8.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "ultimate-veggie",
+      "name": "Ultimate Veggie",
+      "description": "Avocado, Homemade Hummus, shaved Red Pepper, Sundried Tomato, Grated Cabbage, Carrot & a spritz of Lemon on your Choice of Bread",
+      "price": 10.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "greek-chicken-salad",
+      "name": "Chopped Greek Chicken Salad",
+      "description": "Rotisserie Chicken, Feta, Cherry Tomatoes, Cucumber, Kalamata Olives, Oregano, Romaine, Spritz of Lemon & Olive Oil. Served with Warm Pita Bread",
+      "price": 10.99,
+      "isPopular": false,
+      "image": ""
+    }
+  ],
+  "sides": [
+    {
+      "id": "potato-salad",
+      "name": "Potato Salad",
+      "description": "Made with freshly cooked Idaho potatoes - \"Best potato salad I've ever had\"",
+      "price": 0,
+      "priceDisplay": "Included",
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "cole-slaw",
+      "name": "Cole Slaw",
+      "description": "Freshly shredded cabbage & carrots with house-made dressing",
+      "price": 0,
+      "priceDisplay": "Included",
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "cucumber-salad",
+      "name": "Cucumber Salad",
+      "description": "Made with the sweetest English cucumbers we can find",
+      "price": 0,
+      "priceDisplay": "Included",
+      "isPopular": false,
+      "image": ""
+    }
+  ],
+  "drinks": [
+    {
+      "id": "gerhart-coffee",
+      "name": "Gerhart House Brew Coffee",
+      "description": "Locally roasted in Lancaster, PA - served hot or iced",
+      "price": 2.25,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "chai-tea",
+      "name": "House Indian Black Chai Tea",
+      "description": "With cinnamon, allspice & clove - served hot or cold",
+      "price": 2.49,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "hibiscus-tea",
+      "name": "Hibiscus Tea",
+      "description": "Sweet and tart, refreshing",
+      "price": 2.49,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "hibiscus-lemonade",
+      "name": "Hibiscus Flower Lemonade",
+      "description": "Homemade with real hibiscus",
+      "price": 3.49,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "lavender-lemonade",
+      "name": "Lavender Cinnamon Lemonade",
+      "description": "Unique house specialty",
+      "price": 3.49,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "house-sodas",
+      "name": "Custom House Sodas",
+      "description": "House-made sodas & fresh seltzer",
+      "price": 2.49,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "smoothies",
+      "name": "Fresh Fruit Smoothies",
+      "description": "Made with actual fruit",
+      "price": 4.99,
+      "isPopular": false,
+      "image": ""
+    }
+  ]
+}

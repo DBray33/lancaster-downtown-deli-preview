@@ -1,0 +1,8 @@
+{
+  "title": "Honey Curry Chicken",
+  "description": "Shredded Rotisserie Chicken blended with Wildflower Honey, Curry Powder & Mayo on your Choice of Bread. Our best seller and customer favorite!",
+  "price": 10.99,
+  "image": "assets/honey-curry-chicken.jpg",
+  "showCustomerFavorite": true,
+  "isActive": true
+}
