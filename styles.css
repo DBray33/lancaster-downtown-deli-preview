@@ -193,7 +193,7 @@ address {
 ============================================ */
 
 .special-hero {
-    background: url('assets/honey-curry-chicken.jpg') left center / cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1553909489-cd47e0907980?fm=jpg&q=85&w=1920&fit=crop') left center / cover no-repeat;
     padding: var(--space-xl) var(--space-lg);
     position: relative;
     overflow: hidden;
@@ -238,12 +238,39 @@ address {
     padding: var(--space-xs) var(--space-md);
     border-radius: var(--radius-xl);
     margin-bottom: var(--space-md);
-    animation: pulse 2s infinite;
+    animation: fadeInDown 0.6s ease-out, pulse 2s infinite 0.6s;
 }
 
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.02); }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .special-content {
@@ -272,6 +299,7 @@ address {
     font-weight: 700;
     margin-bottom: var(--space-sm);
     color: var(--color-yellow);
+    animation: fadeInUp 0.7s ease-out 0.2s both;
 }
 
 .special-description {
@@ -280,6 +308,7 @@ address {
     margin-bottom: var(--space-md);
     color: var(--color-cream);
     max-width: 600px;
+    animation: fadeInUp 0.7s ease-out 0.4s both;
 }
 
 .special-meta {
@@ -288,6 +317,7 @@ address {
     gap: var(--space-md);
     margin-bottom: var(--space-lg);
     flex-wrap: wrap;
+    animation: fadeInUp 0.7s ease-out 0.6s both;
 }
 
 .special-price {
@@ -325,6 +355,7 @@ address {
     transition: all var(--transition-normal);
     min-height: 52px;
     box-shadow: var(--shadow-md);
+    animation: fadeInUp 0.7s ease-out 0.8s both;
 }
 
 .special-cta:hover {
