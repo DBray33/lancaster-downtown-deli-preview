@@ -124,6 +124,7 @@ address {
 .logo {
     display: flex;
     align-items: center;
+    gap: var(--space-sm);
 }
 
 .logo-img {
@@ -134,8 +135,22 @@ address {
     transition: transform var(--transition-normal);
 }
 
-.logo-img:hover {
+.logo:hover .logo-img {
     transform: scale(1.05);
+}
+
+.logo-text {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-white);
+    display: none;
+}
+
+@media (min-width: 480px) {
+    .logo-text {
+        display: block;
+    }
 }
 
 .nav {
