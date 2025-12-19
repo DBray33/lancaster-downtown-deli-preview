@@ -38,6 +38,7 @@
                 <a href="#menu" class="nav-link">Menu</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#visit" class="nav-link">Visit</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </nav>
         </div>
     </header>
@@ -69,6 +70,7 @@
         <video class="hero-video" autoplay muted loop playsinline>
             <source src="assets/deli-hero.mp4" type="video/mp4">
         </video>
+        <h2 class="hero-title-mobile">Lancaster Downtown Deli</h2>
         <div class="special-badge">
             <i class="fa-solid fa-fire"></i>
             Today's Special
@@ -84,20 +86,22 @@
                     <span class="special-price">$10.99</span>
                     <span class="special-tag"><i class="fa-solid fa-heart"></i> Customer Favorite</span>
                 </div>
-                <a href="tel:+17173973080" class="special-cta">
-                    <i class="fa-solid fa-phone"></i>
-                    Call to Order
-                </a>
-                <div class="order-buttons">
+                <div class="hero-buttons">
+                    <a href="tel:+17173973080" class="order-btn order-btn--call">
+                        <i class="fa-solid fa-phone"></i>
+                        Call
+                    </a>
                     <a href="https://www.grubhub.com/restaurant/lancaster-downtown-deli" target="_blank" rel="noopener" class="order-btn order-btn--grubhub">
-                        <i class="fa-solid fa-bag-shopping"></i>
                         Grubhub
                     </a>
                     <a href="https://www.doordash.com/store/lancaster-downtown-deli" target="_blank" rel="noopener" class="order-btn order-btn--doordash">
-                        <i class="fa-solid fa-bag-shopping"></i>
                         DoorDash
                     </a>
                 </div>
+                <a href="#menu" class="view-menu-btn">
+                    <span>View Menu</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -113,12 +117,10 @@
 
         <div class="order-buttons order-buttons--menu">
             <a href="https://www.grubhub.com/restaurant/lancaster-downtown-deli" target="_blank" rel="noopener" class="order-btn order-btn--grubhub">
-                <i class="fa-solid fa-bag-shopping"></i>
-                Order on Grubhub
+                Grubhub
             </a>
             <a href="https://www.doordash.com/store/lancaster-downtown-deli" target="_blank" rel="noopener" class="order-btn order-btn--doordash">
-                <i class="fa-solid fa-bag-shopping"></i>
-                Order on DoorDash
+                DoorDash
             </a>
         </div>
 
@@ -394,6 +396,41 @@
                     Get Directions
                 </a>
             </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT FORM
+    ============================================ -->
+    <section id="contact" class="contact-section">
+        <div class="contact-content">
+            <h2 class="section-title">
+                <i class="fa-solid fa-envelope"></i>
+                Contact Us
+            </h2>
+            <p class="contact-intro">Have a question or feedback? We'd love to hear from you!</p>
+            <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="contact">
+                <p class="hidden" style="display:none;">
+                    <label>Don't fill this out: <input name="bot-field"></label>
+                </p>
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="message" class="form-input form-textarea" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="form-submit">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
         </div>
     </section>
 

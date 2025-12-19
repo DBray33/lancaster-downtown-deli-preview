@@ -155,14 +155,14 @@ address {
 
 .nav {
     display: flex;
-    gap: var(--space-md);
+    gap: 6px;
 }
 
 .nav-link {
     color: var(--color-white);
     font-weight: 500;
-    font-size: 15px;
-    padding: var(--space-xs) var(--space-sm);
+    font-size: 13px;
+    padding: 6px 8px;
     border-radius: var(--radius-sm);
     transition: all var(--transition-fast);
 }
@@ -247,23 +247,41 @@ address {
     z-index: 1;
 }
 
+.hero-title-mobile,
 .special-badge,
 .special-content {
     position: relative;
     z-index: 2;
 }
 
+.hero-title-mobile {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: var(--space-sm);
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+@media (min-width: 500px) {
+    .hero-title-mobile {
+        display: none;
+    }
+}
+
 .special-badge {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: var(--space-xs);
+    justify-content: center;
+    gap: 4px;
     background: var(--color-red);
     color: var(--color-white);
     font-weight: 600;
-    font-size: 14px;
-    padding: var(--space-xs) var(--space-md);
+    font-size: 11px;
+    padding: 4px 10px;
     border-radius: var(--radius-xl);
-    margin-bottom: var(--space-md);
+    margin: 0 auto var(--space-xs) auto;
+    width: fit-content;
     animation: fadeInDown 0.6s ease-out, pulse 2s infinite 0.6s;
 }
 
@@ -324,7 +342,7 @@ address {
 
 .special-title {
     font-family: var(--font-display);
-    font-size: clamp(1.5rem, 8vw, 2.5rem);
+    font-size: clamp(1.25rem, 6vw, 2rem);
     font-weight: 700;
     margin-bottom: var(--space-sm);
     color: var(--color-yellow);
@@ -333,9 +351,9 @@ address {
 }
 
 .special-description {
-    font-size: 17px;
-    line-height: 1.7;
-    margin-bottom: var(--space-md);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: var(--space-sm);
     color: var(--color-cream);
     max-width: 600px;
     animation: fadeInUp 0.7s ease-out 0.4s both;
@@ -352,7 +370,7 @@ address {
 
 .special-price {
     font-family: var(--font-display);
-    font-size: 2rem;
+    font-size: 15px;
     font-weight: 700;
     color: var(--color-white);
 }
@@ -363,7 +381,7 @@ address {
     gap: var(--space-xs);
     background: rgba(252, 226, 23, 0.2);
     color: var(--color-yellow);
-    font-size: 14px;
+    font-size: 15px;
     padding: var(--space-xs) var(--space-sm);
     border-radius: var(--radius-sm);
 }
@@ -372,48 +390,42 @@ address {
     color: var(--color-red);
 }
 
-.special-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-sm);
-    background: var(--color-green);
-    color: var(--color-white);
-    font-weight: 600;
-    font-size: 17px;
-    padding: var(--space-md) var(--space-lg);
-    border-radius: var(--radius-lg);
-    transition: all var(--transition-normal);
-    min-height: 52px;
-    box-shadow: var(--shadow-md);
+/* Hero & Order Buttons */
+.hero-buttons {
+    display: flex;
+    gap: var(--space-xs);
+    justify-content: center;
     animation: fadeInUp 0.7s ease-out 0.8s both;
 }
 
-.special-cta:hover {
-    background: var(--color-green-light);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
-}
-
-/* Order Buttons */
 .order-buttons {
     display: flex;
-    gap: var(--space-sm);
-    margin-top: var(--space-md);
-    flex-wrap: wrap;
-    animation: fadeInUp 0.7s ease-out 1s both;
+    gap: var(--space-xs);
     justify-content: center;
+    animation: fadeInUp 0.7s ease-out 1s both;
 }
 
 .order-btn {
     display: inline-flex;
     align-items: center;
-    gap: var(--space-xs);
+    justify-content: center;
+    gap: 6px;
     font-weight: 600;
-    font-size: 15px;
-    padding: var(--space-sm) var(--space-md);
+    font-size: 13px;
+    padding: 10px 14px;
     border-radius: var(--radius-md);
     transition: all var(--transition-normal);
-    min-height: 44px;
+    white-space: nowrap;
+}
+
+.order-btn--call {
+    background: var(--color-green);
+    color: var(--color-white);
+}
+
+.order-btn--call:hover {
+    background: var(--color-green-light);
+    transform: translateY(-2px);
 }
 
 .order-btn--grubhub {
@@ -437,7 +449,6 @@ address {
 }
 
 .order-buttons--menu {
-    justify-content: center;
     margin-bottom: var(--space-lg);
     animation: none;
 }
@@ -460,6 +471,37 @@ address {
     font-size: 14px;
     padding: var(--space-xs) var(--space-md);
     min-height: 40px;
+}
+
+.view-menu-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin: var(--space-lg) auto 0 auto;
+    width: fit-content;
+    color: var(--color-cream);
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.9;
+    transition: all var(--transition-normal);
+    animation: fadeInUp 0.7s ease-out 1.2s both;
+}
+
+.view-menu-btn:hover {
+    opacity: 1;
+    color: var(--color-white);
+}
+
+.view-menu-btn i {
+    font-size: 1.25rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(6px); }
+    60% { transform: translateY(3px); }
 }
 
 /* ============================================
@@ -1103,6 +1145,89 @@ address {
 }
 
 /* ============================================
+   CONTACT SECTION
+============================================ */
+
+.contact-section {
+    background: var(--color-cream);
+    padding: var(--space-xl) var(--space-md);
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section .section-title {
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-intro {
+    text-align: center;
+    color: var(--color-text-light);
+    margin-bottom: var(--space-lg);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-charcoal);
+}
+
+.form-input {
+    padding: var(--space-sm);
+    border: 2px solid var(--color-cream-dark);
+    border-radius: var(--radius-md);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    transition: border-color var(--transition-fast);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--color-green);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    background: var(--color-green);
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 16px;
+    padding: var(--space-md) var(--space-lg);
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.form-submit:hover {
+    background: var(--color-green-light);
+    transform: translateY(-2px);
+}
+
+/* ============================================
    FOOTER
 ============================================ */
 
@@ -1215,8 +1340,19 @@ address {
         align-items: flex-end;
     }
 
+    .special-badge {
+        font-size: 14px;
+        padding: var(--space-xs) var(--space-md);
+        margin: 0 0 var(--space-xs) auto;
+    }
+
+    .hero-buttons,
     .order-buttons {
         justify-content: flex-end;
+    }
+
+    .order-buttons--menu {
+        justify-content: center;
     }
 
     .special-description {
@@ -1228,16 +1364,9 @@ address {
     }
 
     .special-title {
-        font-size: 3.5rem;
-    }
-
-    .special-description {
-        font-size: 18px;
-    }
-
-    .special-price {
         font-size: 2.5rem;
     }
+
 
     .section-title {
         font-size: 2rem;
@@ -1350,7 +1479,7 @@ address {
     }
 
     .special-title {
-        font-size: 3rem;
+        font-size: 2.25rem;
     }
 
     .reviews-grid {
