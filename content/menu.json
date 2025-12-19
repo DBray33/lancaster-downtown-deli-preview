@@ -1,25 +1,9 @@
 {
   "breakfast": [
     {
-      "id": "mexican-egg",
-      "name": "Mexican Egg",
-      "description": "Sausage Patty, Green Chilies, Cumin & 2 Large Eggs on a Choice of Bagel",
-      "price": 8.99,
-      "isPopular": false,
-      "image": ""
-    },
-    {
       "id": "belt",
       "name": "B.E.L.T",
       "description": "3 slices of Applewood Smoked Bacon, 2 Large Eggs, Lettuce & sliced Tomato on Texas Toast",
-      "price": 8.99,
-      "isPopular": false,
-      "image": ""
-    },
-    {
-      "id": "breakfast-melt",
-      "name": "Breakfast Melt",
-      "description": "3 slices of Applewood Smoked Bacon, 2 Large Eggs, 3 slices of Melted Cheese on a Bagel of Choice",
       "price": 8.99,
       "isPopular": false,
       "image": ""
@@ -31,6 +15,22 @@
       "price": 9.99,
       "isPopular": false,
       "image": "/assets/sandwich-lunch.jpg"
+    },
+    {
+      "id": "breakfast-melt",
+      "name": "Breakfast Melt",
+      "description": "3 slices of Applewood Smoked Bacon, 2 Large Eggs, 3 slices of Melted Cheese on a Bagel of Choice",
+      "price": 8.99,
+      "isPopular": false,
+      "image": ""
+    },
+    {
+      "id": "mexican-egg",
+      "name": "Mexican Egg",
+      "description": "Sausage Patty, Green Chilies, Cumin & 2 Large Eggs on a Choice of Bagel",
+      "price": 8.99,
+      "isPopular": false,
+      "image": ""
     },
     {
       "id": "greek-egg",
