@@ -30,7 +30,7 @@
       "description": "Sausage Patty, Green Chilies, Cumin & 2 Large Eggs on a Choice of Bagel",
       "price": 8.99,
       "isPopular": false,
-      "image": ""
+      "image": "https://images.pexels.com/photos/2293534/pexels-photo-2293534.jpeg"
     },
     {
       "id": "greek-egg",
@@ -38,7 +38,7 @@
       "description": "Crumbled Feta, 2 Large Eggs, Diced Kalamata Olives & Sauteed Cherry Tomatoes on Warm Pita Bread",
       "price": 9.99,
       "isPopular": false,
-      "image": ""
+      "image": "https://images.pexels.com/photos/35215470/pexels-photo-35215470.jpeg"
     },
     {
       "id": "ham-cheese-burrito",
@@ -46,7 +46,7 @@
       "description": "3 Large Eggs, diced Easter Ham & Parmesan Cheese in a warm Flour Tortilla",
       "price": 9.99,
       "isPopular": false,
-      "image": ""
+      "image": "https://images.pexels.com/photos/4955266/pexels-photo-4955266.jpeg"
     },
     {
       "id": "ham-egg-cheese",
