@@ -24,8 +24,8 @@
     --color-red: #D32F2F;
 
     /* Typography */
-    --font-serif: 'Playfair Display', Georgia, serif;
-    --font-sans: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
     /* Spacing */
     --space-xs: 0.5rem;
@@ -140,7 +140,7 @@ address {
 }
 
 .logo-text {
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--color-white);
@@ -217,6 +217,7 @@ address {
     flex-direction: column;
     justify-content: center;
     background: var(--color-charcoal);
+    border-radius: 0 0 48px 48px;
 }
 
 .hero-video {
@@ -320,7 +321,7 @@ address {
 }
 
 .special-title {
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: var(--space-sm);
@@ -347,7 +348,7 @@ address {
 }
 
 .special-price {
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
     font-size: 2rem;
     font-weight: 700;
     color: var(--color-white);
@@ -401,7 +402,7 @@ address {
 }
 
 .section-title {
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
     font-size: 1.75rem;
     font-weight: 700;
     color: var(--color-charcoal);
@@ -458,7 +459,7 @@ address {
 }
 
 .category-title {
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--color-charcoal);
@@ -601,7 +602,7 @@ address {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
     font-size: 20rem;
     color: rgba(255,255,255,0.05);
     line-height: 1;
@@ -728,7 +729,7 @@ address {
 }
 
 .review-text {
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
     font-size: 1.5rem;
     line-height: 1.6;
     color: var(--color-text);
@@ -771,7 +772,7 @@ address {
 
 .stat-number {
     display: block;
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--color-yellow);
@@ -858,7 +859,7 @@ address {
     right: 15px;
     background: var(--color-charcoal);
     color: var(--color-yellow);
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
     font-size: 12px;
     font-weight: 700;
     padding: 8px 16px;
@@ -886,7 +887,7 @@ address {
 }
 
 .about-text p:first-of-type::first-letter {
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
     font-size: 3.5rem;
     font-weight: 700;
     float: left;
@@ -1132,6 +1133,7 @@ address {
         justify-content: center;
         align-items: flex-end;
         text-align: right;
+        border-radius: 0 0 48px 48px;
     }
 
     .special-content {
