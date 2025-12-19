@@ -6,7 +6,7 @@
       "description": "3 slices of Applewood Smoked Bacon, 2 Large Eggs, Lettuce & sliced Tomato on Texas Toast",
       "price": 8.99,
       "isPopular": false,
-      "image": ""
+      "image": "https://images.pexels.com/photos/133578/pexels-photo-133578.jpeg"
     },
     {
       "id": "breakfast-burrito",
@@ -14,7 +14,7 @@
       "description": "Breakfast Sausage, Crumbled Bacon, 3 Large Eggs & Parmesan Cheese in a Warm Flour Tortilla",
       "price": 9.99,
       "isPopular": false,
-      "image": "/assets/sandwich-lunch.jpg"
+      "image": "https://images.pexels.com/photos/5848704/pexels-photo-5848704.jpeg"
     },
     {
       "id": "breakfast-melt",
@@ -22,7 +22,7 @@
       "description": "3 slices of Applewood Smoked Bacon, 2 Large Eggs, 3 slices of Melted Cheese on a Bagel of Choice",
       "price": 8.99,
       "isPopular": false,
-      "image": ""
+      "image": "https://images.pexels.com/photos/13376561/pexels-photo-13376561.jpeg"
     },
     {
       "id": "mexican-egg",
