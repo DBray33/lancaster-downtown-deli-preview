@@ -217,7 +217,6 @@ address {
     flex-direction: column;
     justify-content: center;
     background: var(--color-charcoal);
-    border-radius: 0 0 48px 48px;
 }
 
 .hero-video {
@@ -1133,7 +1132,6 @@ address {
         justify-content: center;
         align-items: flex-end;
         text-align: right;
-        border-radius: 0 0 48px 48px;
     }
 
     .special-content {
