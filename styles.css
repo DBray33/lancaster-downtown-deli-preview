@@ -247,6 +247,17 @@ address {
     z-index: 1;
 }
 
+.special-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-green), var(--color-yellow), var(--color-green));
+    z-index: 2;
+}
+
 .hero-title-mobile,
 .special-badge,
 .special-content {
@@ -1159,6 +1170,17 @@ address {
 .contact-section {
     background: var(--color-cream);
     padding: var(--space-xl) var(--space-md);
+    position: relative;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-green), var(--color-yellow), var(--color-green));
 }
 
 .contact-content {
