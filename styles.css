@@ -208,15 +208,14 @@ address {
 ============================================ */
 
 .hero {
-    padding: var(--space-xl) var(--space-lg) 80px;
+    padding: var(--space-xxl) var(--space-lg);
     position: relative;
     overflow: hidden;
-    text-align: center;
-    min-height: 450px;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background: var(--color-charcoal);
 }
 
@@ -238,7 +237,12 @@ address {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(44, 44, 44, 0.6);
+    background: linear-gradient(
+        to right,
+        rgba(44, 44, 44, 0.85) 0%,
+        rgba(44, 44, 44, 0.7) 50%,
+        rgba(44, 44, 44, 0.4) 100%
+    );
     z-index: 1;
 }
 
@@ -256,25 +260,40 @@ address {
 .hero-content {
     position: relative;
     z-index: 2;
-    text-align: center;
+    text-align: left;
+    max-width: 750px;
+    padding: 0 var(--space-md);
+}
+
+@media (min-width: 1024px) {
+    .hero-content {
+        padding-left: var(--space-xxl);
+    }
 }
 
 .hero-title {
     font-family: var(--font-display);
-    font-size: clamp(2rem, 8vw, 3.5rem);
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
     font-weight: 700;
     color: var(--color-white);
-    margin-bottom: var(--space-sm);
-    text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    margin-bottom: var(--space-md);
+    line-height: 1.15;
     animation: fadeInUp 0.7s ease-out both;
 }
 
-.hero-tagline {
-    font-size: clamp(1rem, 3vw, 1.25rem);
-    color: var(--color-yellow);
-    font-weight: 600;
+.hero-title .highlight-gradient {
+    background: linear-gradient(90deg, #7cb342, var(--color-yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+    color: var(--color-cream);
+    line-height: 1.6;
     margin-bottom: var(--space-lg);
-    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    max-width: 580px;
     animation: fadeInUp 0.7s ease-out 0.2s both;
 }
 
@@ -294,13 +313,67 @@ address {
     to { opacity: 1; }
 }
 
-/* Hero & Order Buttons */
+/* Hero Buttons */
 .hero-buttons {
     display: flex;
-    gap: var(--space-xs);
-    justify-content: center;
-    animation: fadeInUp 0.7s ease-out 0.8s both;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+    animation: fadeInUp 0.7s ease-out 0.4s both;
 }
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 14px 28px;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-normal);
+    white-space: nowrap;
+}
+
+.hero-btn--primary {
+    background: var(--color-green);
+    color: var(--color-white);
+}
+
+.hero-btn--primary:hover {
+    background: var(--color-green-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(30, 104, 5, 0.4);
+}
+
+.hero-btn--outline {
+    background: transparent;
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
+}
+
+.hero-btn--outline:hover {
+    background: var(--color-white);
+    color: var(--color-charcoal);
+    transform: translateY(-2px);
+}
+
+.hero-order {
+    margin-top: var(--space-sm);
+    animation: fadeInUp 0.7s ease-out 0.6s both;
+}
+
+.hero-btn--doordash {
+    background: #FF3008;
+    color: var(--color-white);
+}
+
+.hero-btn--doordash:hover {
+    background: #e02b07;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 48, 8, 0.4);
+}
+
+/* Order Buttons */
 
 .order-buttons {
     display: flex;
@@ -423,9 +496,37 @@ address {
     margin: 0 auto;
 }
 
+.menu-section-wrapper {
+    background: var(--color-cream);
+    position: relative;
+}
+
+.menu-section-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('assets/deli-drawing-background-pattern.png') repeat;
+    background-size: 300px;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
 .menu-section .section-title {
     justify-content: center;
     text-align: center;
+}
+
+.menu-section .menu-search,
+.menu-section .order-buttons {
+    position: relative;
+    z-index: 1;
+}
+
+.menu-section .menu-search {
+    background: var(--color-white);
 }
 
 /* Menu Search */
@@ -681,8 +782,9 @@ address {
 ============================================ */
 
 .todays-special-section {
-    background: var(--color-cream);
     padding: var(--space-xl) var(--space-md);
+    position: relative;
+    z-index: 1;
 }
 
 .todays-special-section .section-title {
